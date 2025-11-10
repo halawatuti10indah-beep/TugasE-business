@@ -1,0 +1,73 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.title {
+  color: #1a237e;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.user-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-table th {
+  background-color: #283593;
+  color: white;
+  padding: 12px;
+}
+
+.user-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.user-table tr:hover {
+  background-color: #e3f2fd;
+  transition: 0.2s;
+}
+
+/* Loading & Error Styles */
+.loading-container, .error-container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.loading-text, .error-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #1a237e;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
